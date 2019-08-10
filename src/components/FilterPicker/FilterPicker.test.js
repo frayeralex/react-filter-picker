@@ -116,7 +116,7 @@ describe('<FilterPicker/>', () => {
         .first()
         .prop('style').width,
     ).toEqual('calc(100% - 20px)');
-  })
+  });
   it('should show fullwidht dropdown on tablet', () => {
     const md = {
       phone: jest.fn(() => false),
@@ -129,5 +129,5 @@ describe('<FilterPicker/>', () => {
         .first()
         .prop('style').width,
     ).toEqual('calc(100% - 20px)');
-  })
+  });
 });

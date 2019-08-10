@@ -60,9 +60,18 @@ exports[`<Filter/> should handle on filter apply correctly 1`] = `
     }
     md={
       MobileDetect {
-        "_cache": Object {},
-        "maxPhoneWidth": 600,
-        "ua": "Node.js (darwin; U; rv:v12.6.0) AppleWebKit/537.36 (KHTML, like Gecko)",
+        "is": [Function],
+        "isPhoneSized": [Function],
+        "match": [Function],
+        "mobile": [Function],
+        "mobileGrade": [Function],
+        "os": [Function],
+        "phone": [Function],
+        "tablet": [Function],
+        "userAgent": [Function],
+        "userAgents": [Function],
+        "version": [Function],
+        "versionStr": [Function],
       }
     }
     onApply={[Function]}
@@ -220,9 +229,18 @@ exports[`<Filter/> should show picket correctly 1`] = `
     }
     md={
       MobileDetect {
-        "_cache": Object {},
-        "maxPhoneWidth": 600,
-        "ua": "Node.js (darwin; U; rv:v12.6.0) AppleWebKit/537.36 (KHTML, like Gecko)",
+        "is": [Function],
+        "isPhoneSized": [Function],
+        "match": [Function],
+        "mobile": [Function],
+        "mobileGrade": [Function],
+        "os": [Function],
+        "phone": [Function],
+        "tablet": [Function],
+        "userAgent": [Function],
+        "userAgents": [Function],
+        "version": [Function],
+        "versionStr": [Function],
       }
     }
     onApply={[Function]}
