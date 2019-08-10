@@ -1,12 +1,12 @@
-import React from 'react'
-import classNames from 'classnames'
-import styles from './styles.css'
-import PropTypes from 'prop-types'
+import React from 'react';
+import classNames from 'classnames';
+import styles from './styles.css';
+import PropTypes from 'prop-types';
 
-const FilterButton = (props) => {
+const FilterButton = props => {
   let boxRef = React.createRef();
 
-  const handleOnClick = (event) => {
+  const handleOnClick = event => {
     event.stopPropagation();
     event.nativeEvent.stopImmediatePropagation();
 
@@ -14,28 +14,35 @@ const FilterButton = (props) => {
       filter: props.filter,
       coordinates: boxRef.current.getBoundingClientRect(),
     });
-  }
+  };
 
   return (
     <div
       ref={boxRef}
       onClick={handleOnClick}
       className={classNames(styles.FilterButton, {
-        [styles.FilterButton_active]: props.active
-      })}>
+        [styles.FilterButton_active]: props.active,
+      })}
+    >
       <span className="label">{props.filter}</span>
-      {props.selectedCount > 0 && <span className="selected-filters-count">{' '}({props.selectedCount})</span>}
+      {props.selectedCount > 0 && (
+        <span className="selected-filters-count"> ({props.selectedCount})</span>
+      )}
     </div>
-  )
-}
+  );
+};
 
 FilterButton.propTypes = {
   filter: PropTypes.string.isRequired,
+  active: PropTypes.bool,
   selectedCount: PropTypes.number,
-}
+  onClick: PropTypes.func,
+};
 
 FilterButton.defaultProps = {
+  onClick: () => {},
+  active: false,
   selectedCount: 0,
-}
+};
 
 export default FilterButton;

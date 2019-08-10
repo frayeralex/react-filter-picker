@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterPicker/> should correct render with more then 1 active filter 1`] = `
+<Fragment>
+  <span
+    style={
+      Object {
+        "left": 50,
+        "top": 70,
+      }
+    }
+  />
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "left": 10,
+        "top": 80,
+        "width": 300,
+      }
+    }
+  >
+    <div>
+      <CollapsedBox
+        expanded={true}
+        key="color"
+        title="color"
+      >
+        <FilterGroup
+          filter="color"
+          filterItems={
+            Array [
+              Object {
+                "id": "1",
+                "title": "first",
+              },
+              Object {
+                "id": "2",
+                "title": "second",
+              },
+            ]
+          }
+          onApply={[Function]}
+          selectedFilters={Array []}
+        />
+      </CollapsedBox>
+      <CollapsedBox
+        expanded={false}
+        key="size"
+        title="size"
+      >
+        <FilterGroup
+          filter="size"
+          filterItems={
+            Array [
+              Object {
+                "id": "1",
+                "title": "first",
+              },
+              Object {
+                "id": "2",
+                "title": "second",
+              },
+            ]
+          }
+          onApply={[Function]}
+          selectedFilters={Array []}
+        />
+      </CollapsedBox>
+    </div>
+  </div>
+</Fragment>
+`;
+
+exports[`<FilterPicker/> should render without crashing 1`] = `
+<Fragment>
+  <span
+    style={
+      Object {
+        "left": 50,
+        "top": 70,
+      }
+    }
+  />
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "left": 10,
+        "top": 80,
+        "width": 300,
+      }
+    }
+  >
+    <div>
+      <CollapsedBox
+        expanded={true}
+        key="color"
+        title={null}
+      >
+        <FilterGroup
+          filter="color"
+          filterItems={
+            Array [
+              Object {
+                "id": "1",
+                "title": "first",
+              },
+              Object {
+                "id": "2",
+                "title": "second",
+              },
+            ]
+          }
+          onApply={[Function]}
+          selectedFilters={Array []}
+        />
+      </CollapsedBox>
+    </div>
+  </div>
+</Fragment>
+`;

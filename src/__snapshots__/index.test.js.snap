@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filter/> should handle on filter apply correctly 1`] = `
+<div>
+  <div>
+    <FilterButton
+      active={true}
+      filter="color"
+      key="color"
+      onClick={[Function]}
+      selectedCount={0}
+    />
+    <FilterButton
+      active={true}
+      filter="size"
+      key="size"
+      onClick={[Function]}
+      selectedCount={1}
+    />
+  </div>
+  <FilterPicker
+    activeFilters={
+      Array [
+        "color",
+      ]
+    }
+    coordinates={
+      Object {
+        "bottom": 30,
+        "height": 40,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+        "width": 100,
+      }
+    }
+    filterData={
+      Object {
+        "color": Array [
+          Object {
+            "id": "1",
+            "title": "first",
+          },
+          Object {
+            "id": "2",
+            "title": "second",
+          },
+        ],
+        "size": Array [
+          Object {
+            "id": "1",
+            "title": "first",
+          },
+          Object {
+            "id": "2",
+            "title": "second",
+          },
+        ],
+      }
+    }
+    md={
+      MobileDetect {
+        "_cache": Object {},
+        "maxPhoneWidth": 600,
+        "ua": "Node.js (darwin; U; rv:v12.6.0) AppleWebKit/537.36 (KHTML, like Gecko)",
+      }
+    }
+    onApply={[Function]}
+    selectedFilters={
+      Object {
+        "size": Array [
+          "1",
+        ],
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<Filter/> should handle on filter apply correctly 2`] = `
+<div>
+  <div>
+    <FilterButton
+      active={true}
+      filter="color"
+      key="color"
+      onClick={[Function]}
+      selectedCount={2}
+    />
+    <FilterButton
+      active={true}
+      filter="size"
+      key="size"
+      onClick={[Function]}
+      selectedCount={1}
+    />
+  </div>
+</div>
+`;
+
+exports[`<Filter/> should handle on filter apply correctly 3`] = `
+<div>
+  <div>
+    <FilterButton
+      active={true}
+      filter="color"
+      key="color"
+      onClick={[Function]}
+      selectedCount={2}
+    />
+    <FilterButton
+      active={true}
+      filter="size"
+      key="size"
+      onClick={[Function]}
+      selectedCount={1}
+    />
+  </div>
+</div>
+`;
+
+exports[`<Filter/> should render with menu include More Filter button 1`] = `
+<div>
+  <div>
+    <FilterButton
+      active={false}
+      filter="color"
+      key="color"
+      onClick={[Function]}
+      selectedCount={0}
+    />
+    <FilterButton
+      active={false}
+      filter="More"
+      onClick={[Function]}
+      selectedCount={0}
+    />
+  </div>
+</div>
+`;
+
+exports[`<Filter/> should render without crashing 1`] = `
+<div>
+  <div>
+    <FilterButton
+      active={false}
+      filter="color"
+      key="color"
+      onClick={[Function]}
+      selectedCount={0}
+    />
+    <FilterButton
+      active={false}
+      filter="size"
+      key="size"
+      onClick={[Function]}
+      selectedCount={0}
+    />
+  </div>
+</div>
+`;
+
+exports[`<Filter/> should show picket correctly 1`] = `
+<div>
+  <div>
+    <FilterButton
+      active={true}
+      filter="color"
+      key="color"
+      onClick={[Function]}
+      selectedCount={0}
+    />
+    <FilterButton
+      active={false}
+      filter="size"
+      key="size"
+      onClick={[Function]}
+      selectedCount={0}
+    />
+  </div>
+  <FilterPicker
+    activeFilters={
+      Array [
+        "color",
+      ]
+    }
+    coordinates={
+      Object {
+        "bottom": 30,
+        "height": 40,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+        "width": 100,
+      }
+    }
+    filterData={
+      Object {
+        "color": Array [
+          Object {
+            "id": "1",
+            "title": "first",
+          },
+          Object {
+            "id": "2",
+            "title": "second",
+          },
+        ],
+        "size": Array [
+          Object {
+            "id": "1",
+            "title": "first",
+          },
+          Object {
+            "id": "2",
+            "title": "second",
+          },
+        ],
+      }
+    }
+    md={
+      MobileDetect {
+        "_cache": Object {},
+        "maxPhoneWidth": 600,
+        "ua": "Node.js (darwin; U; rv:v12.6.0) AppleWebKit/537.36 (KHTML, like Gecko)",
+      }
+    }
+    onApply={[Function]}
+    selectedFilters={Object {}}
+  />
+</div>
+`;

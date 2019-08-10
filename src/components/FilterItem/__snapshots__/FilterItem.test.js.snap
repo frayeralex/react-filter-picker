@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterItem/> should has active mode 1`] = `
+<div
+  className="undefined"
+  onClick={[Function]}
+>
+  <div
+    className="title"
+  >
+    title
+  </div>
+</div>
+`;
+
+exports[`<FilterItem/> should render without crashing 1`] = `
+<div
+  className=""
+  onClick={[Function]}
+>
+  <div
+    className="title"
+  >
+    title
+  </div>
+</div>
+`;

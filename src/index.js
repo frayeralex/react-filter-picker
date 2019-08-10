@@ -1,9 +1,9 @@
-import React, { Component, useState } from 'react'
+import React, { Component, useState } from 'react';
 import { FilterPicker, FilterButton } from './components';
-import PropTypes from 'prop-types'
-import MobileDetect from 'mobile-detect'
+import PropTypes from 'prop-types';
+import MobileDetect from 'mobile-detect';
 
-import styles from './styles.css'
+import styles from './styles.css';
 
 export default class Filter extends Component {
   static propTypes = {
@@ -11,13 +11,13 @@ export default class Filter extends Component {
     filterData: PropTypes.object.isRequired,
     onChange: PropTypes.func,
     document: PropTypes.object,
-  }
+  };
 
   static defaultProps = {
     document: window.document,
     md: new MobileDetect(window.navigator.userAgent),
-    onChange: () => {}
-  }
+    onChange: () => {},
+  };
 
   constructor(props) {
     super(props);
@@ -26,12 +26,12 @@ export default class Filter extends Component {
       showFilterCount: props.md.phone()
         ? 2
         : props.md.tablet()
-          ? 4
-          : Object.keys(props.filterData).length,
+        ? 4
+        : Object.keys(props.filterData).length,
       filter: null,
       activeFilters: [],
       coordinates: null,
-      selectedFilters: {}
+      selectedFilters: {},
     };
   }
 
@@ -44,7 +44,7 @@ export default class Filter extends Component {
       filter: null,
       coordinates: null,
     });
-  }
+  };
 
   componentDidUpdate(prevProps, prevState, snapshot) {
     if (prevState.selectedFilters !== this.state.selectedFilters) {
@@ -54,65 +54,86 @@ export default class Filter extends Component {
       this.props.document.addEventListener('click', this.handleDocumentClick);
     }
     if (prevState.filter && !this.state.filter) {
-      this.props.document.removeEventListener('click', this.handleDocumentClick);
+      this.props.document.removeEventListener(
+        'click',
+        this.handleDocumentClick,
+      );
     }
   }
 
-  handleOnLabelClick = (params) => {
+  handleOnLabelClick = params => {
     this.setState({
       ...params,
-      activeFilters: [params.filter]
+      activeFilters: [params.filter],
     });
-  }
+  };
 
-  handleMoreFilterClick = (params) => {
+  handleMoreFilterClick = params => {
     this.setState({
       ...params,
-      activeFilters: Object.keys(this.props.filterData).slice(this.state.showFilterCount)
+      activeFilters: Object.keys(this.props.filterData).slice(
+        this.state.showFilterCount,
+      ),
     });
-  }
+  };
 
   /**
    * @public method
    */
   clearAll = () => {
     this.setState({ selectedFilters: {} });
-  }
+  };
 
-  handleOnFilterApply = (selectedFilters) => {
+  handleOnFilterApply = selectedFilters => {
     this.setState({
       selectedFilters: {
         ...this.state.selectedFilters,
-        ...selectedFilters
+        ...selectedFilters,
       },
       filter: null,
       coordinates: null,
     });
-  }
+  };
 
   render() {
-    const show = Object.keys(this.props.filterData).slice(0, this.state.showFilterCount);
-    const rest = Object.keys(this.props.filterData).slice(this.state.showFilterCount);
+    const show = Object.keys(this.props.filterData).slice(
+      0,
+      this.state.showFilterCount,
+    );
+    const rest = Object.keys(this.props.filterData).slice(
+      this.state.showFilterCount,
+    );
 
     return (
       <div className={styles.Filter}>
         <div className={styles.Filter_buttons_container}>
           {show.map(filter => {
             return (
-                <FilterButton
-                  key={filter}
-                  onClick={this.handleOnLabelClick}
-                  filter={filter}
-                  active={this.state.filter === filter || (this.state.selectedFilters[filter] || []).length > 0}
-                  selectedCount={(this.state.selectedFilters[filter] || []).length}
-                />
-              )
+              <FilterButton
+                key={filter}
+                onClick={this.handleOnLabelClick}
+                filter={filter}
+                active={
+                  this.state.filter === filter ||
+                  (this.state.selectedFilters[filter] || []).length > 0
+                }
+                selectedCount={
+                  (this.state.selectedFilters[filter] || []).length
+                }
+              />
+            );
           })}
           {rest.length > 0 && (
             <FilterButton
               onClick={this.handleMoreFilterClick}
               filter="More"
-              active={this.state.filter === 'More' || rest.some(filter => (this.state.selectedFilters[filter] || []).length > 0)}
+              active={
+                this.state.filter === 'More' ||
+                rest.some(
+                  filter =>
+                    (this.state.selectedFilters[filter] || []).length > 0,
+                )
+              }
             />
           )}
         </div>
@@ -126,6 +147,6 @@ export default class Filter extends Component {
           />
         )}
       </div>
-    )
+    );
   }
 }

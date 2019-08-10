@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterGroup/> should render without crashing 1`] = `
+<div>
+  <div>
+    <FilterItem
+      active={false}
+      key="1"
+      onClick={[Function]}
+      title="First"
+    />
+    <FilterItem
+      active={false}
+      key="2"
+      onClick={[Function]}
+      title="Second"
+    />
+  </div>
+  <div>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Apply
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<FilterGroup/> should set default selectedFilters state correctly 1`] = `
+<div>
+  <div>
+    <FilterItem
+      active={true}
+      key="1"
+      onClick={[Function]}
+      title="First"
+    />
+    <FilterItem
+      active={true}
+      key="2"
+      onClick={[Function]}
+      title="Second"
+    />
+  </div>
+  <div>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Apply
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<FilterGroup/> should show FilterItems correctly 1`] = `
+<div>
+  <div>
+    <FilterItem
+      active={false}
+      key="1"
+      onClick={[Function]}
+      title="First"
+    />
+    <FilterItem
+      active={false}
+      key="2"
+      onClick={[Function]}
+      title="Second"
+    />
+    <FilterItem
+      active={false}
+      key="3"
+      onClick={[Function]}
+      title="3"
+    />
+  </div>
+  <div>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Apply
+    </button>
+  </div>
+</div>
+`;

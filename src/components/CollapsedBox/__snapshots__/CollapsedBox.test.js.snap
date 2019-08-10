@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CollapsedBox/> should render children in correct place 1`] = `
+<div
+  className=""
+>
+  <header
+    onClick={[Function]}
+  >
+    <span>
+      title
+    </span>
+    <span>
+      +
+    </span>
+  </header>
+  <div>
+    <span
+      className="children"
+    >
+      children
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<CollapsedBox/> should render without crashing 1`] = `
+<div
+  className=""
+>
+  <div />
+</div>
+`;
+
+exports[`<CollapsedBox/> should show expanded indicator correctly 1`] = `
+<div
+  className="undefined"
+>
+  <header
+    onClick={[Function]}
+  >
+    <span>
+      title
+    </span>
+    <span>
+      -
+    </span>
+  </header>
+  <div />
+</div>
+`;
+
+exports[`<CollapsedBox/> should show title correctly 1`] = `
+<div
+  className=""
+>
+  <header
+    onClick={[Function]}
+  >
+    <span>
+      title
+    </span>
+    <span>
+      +
+    </span>
+  </header>
+  <div />
+</div>
+`;

@@ -3,10 +3,12 @@
 > React component which include menu bar with picker 
 
 [![NPM](https://img.shields.io/npm/v/react-filter-picker.svg)](https://www.npmjs.com/package/react-filter-picker) 
+[![Build Status](https://travis-ci.org/frayeralex/react-filter-picker.svg?branch=master)](https://travis-ci.org/frayeralex/react-filter-picker)
 ## Install
 
 ```bash
 npm install --save react-filter-picker
+yarn add react-filter-picker
 ```
 
 ## Usage
@@ -14,7 +16,7 @@ npm install --save react-filter-picker
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-nectar-filter'
+import Filter from 'react-nectar-filter'
 
 const filterData = {
   size: [
