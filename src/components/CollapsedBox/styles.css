@@ -1,0 +1,30 @@
+.CollapsedBox {
+  display: block;
+}
+
+.CollapsedBox_expanded .CollapsedBox_content {
+  height: auto;
+}
+
+.CollapsedBox_header {
+  padding: 10px;
+  background: rgba(0,0,0,.1);
+  display: flex;
+  border-top: 1px solid #000;
+}
+
+.CollapsedBox_content {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 0;
+}
+
+.CollapsedBox_title {
+  flex-grow: 1;
+}
+
+.CollapsedBox_indicator {
+  font-size: 20px;
+  font-weight: 600;
+}

@@ -1,8 +1,16 @@
 /* add css styles here (optional) */
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.Filter {
+  width: 100%;
+}
+
+.Filter_buttons_container {
+  display: flex;
+  align-items: center;
+}
+
+.FilterItem {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px;
 }

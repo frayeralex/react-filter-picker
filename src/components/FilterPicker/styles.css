@@ -1,0 +1,38 @@
+.FilterPiker {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f1f1f1;
+  transition: .4s;
+  animation: fadeIn .3s;
+  transform-origin: bottom center;
+
+}
+
+.FilterPiker_triangular {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(0, 0, 0, .1);
+  animation: fadeIn .3s;
+  transform-origin: bottom center;
+  transition: .2s;
+}
+
+.FilterPiker_content {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0)
+  }
+}

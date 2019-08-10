@@ -1,0 +1,20 @@
+.FilterGroup {
+  padding: 10px;
+}
+
+.FilterGroup_items_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.FilterGroup_controls_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.FilterGroup_controls_container_btn {
+  background: #fff;
+  padding: 5px 20px;
+  border-radius: 0;
+}
