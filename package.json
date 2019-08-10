@@ -1,7 +1,7 @@
 {
   "name": "react-filter-picker",
-  "version": "1.0.0",
-  "description": "React componet which include menu bar with picker ",
+  "version": "0.1.0",
+  "description": "React component which include menu bar with picker ",
   "author": "frayeralex",
   "license": "MIT",
   "repository": "frayeralex/react-filter-picker",
@@ -57,5 +57,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "mobile-detect": "^1.4.3"
+  }
 }
