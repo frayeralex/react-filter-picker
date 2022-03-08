@@ -1632,6 +1632,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 clean-css@4.2.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
@@ -5159,6 +5164,11 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
   dependencies:
     minimist "0.0.8"
 
+mobile-detect@^1.4.3:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/mobile-detect/-/mobile-detect-1.4.5.tgz#da393c3c413ca1a9bcdd9ced653c38281c0fb6ad"
+  integrity sha512-yc0LhH6tItlvfLBugVUEtgawwFU2sIe+cSdmRJJCTMZ5GEJyLxNyC/NIOAOGk67Fa8GNpOttO3Xz/1bHpXFD/g==
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -6404,8 +6414,10 @@ react-error-overlay@^4.0.1:
   integrity sha512-xXUbDAZkU08aAkjtUvldqbvI04ogv+a1XdHxvYuHPYKIVk/42BIOD0zSKTHAWV4+gDy3yGm283z2072rA2gdtw==
 
 "react-filter-picker@link:..":
-  version "0.0.0"
-  uid ""
+  version "0.1.1"
+  dependencies:
+    classnames "^2.2.6"
+    mobile-detect "^1.4.3"
 
 react-is@^16.8.1:
   version "16.9.0"
@@ -7760,9 +7772,9 @@ uri-js@^4.2.2:
     punycode "^2.1.0"
 
 urijs@^1.16.1:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.1.tgz#5b0ff530c0cbde8386f6342235ba5ca6e995d25a"
-  integrity sha512-xVrGVi94ueCJNrBSTjWqjvtgvl3cyOTThp2zaMaFNGp3F542TR6sM3f2o8RqZl+AwteClSVmoCyt0ka4RjQOQg==
+  version "1.19.10"
+  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.10.tgz#8e2fe70a8192845c180f75074884278f1eea26cb"
+  integrity sha512-EzauQlgKuJgsXOqoMrCiePBf4At5jVqRhXykF3Wfb8ZsOBMxPcfiVBcsHXug4Aepb/ICm2PIgqAUGMelgdrWEg==
 
 urix@^0.1.0:
   version "0.1.0"
